@@ -1,0 +1,2445 @@
+{
+	"project_id": "538604003852000",
+	"name": "zhifeng.fan的项目",
+	"intro": "",
+	"global": {
+		"envs": [
+			{
+				"env_id": "1",
+				"name": "默认环境",
+				"is_private": -1,
+				"sort": 0,
+				"server_list": [
+					{
+						"server_id": "1",
+						"name": "默认服务",
+						"sort": 0,
+						"uri": ""
+					}
+				],
+				"env_var_list": {}
+			},
+			{
+				"env_id": "2",
+				"name": "Mock环境",
+				"is_private": -1,
+				"sort": 0,
+				"server_list": [
+					{
+						"server_id": "1",
+						"name": "默认服务",
+						"sort": 1000,
+						"uri": "https://mock.apipost.net/mock/538604003852000"
+					}
+				],
+				"env_var_list": {}
+			}
+		],
+		"servers": [
+			{
+				"server_id": "1",
+				"name": "默认服务",
+				"sort": 1000
+			}
+		],
+		"global_vars": {},
+		"global_param": {
+			"header": {
+				"parameter": []
+			},
+			"query": {
+				"parameter": []
+			},
+			"body": {
+				"parameter": []
+			},
+			"cookie": {
+				"parameter": []
+			},
+			"auth": {
+				"type": "noauth",
+				"kv": {
+					"key": "",
+					"value": "",
+					"in": ""
+				},
+				"bearer": {
+					"key": ""
+				},
+				"basic": {
+					"username": "",
+					"password": ""
+				},
+				"digest": {
+					"username": "",
+					"password": "",
+					"realm": "",
+					"nonce": "",
+					"algorithm": "",
+					"qop": "",
+					"nc": "",
+					"cnonce": "",
+					"opaque": ""
+				},
+				"hawk": {
+					"authId": "",
+					"authKey": "",
+					"algorithm": "",
+					"user": "",
+					"nonce": "",
+					"extraData": "",
+					"default": "",
+					"delegation": "",
+					"timestamp": "",
+					"includePayloadHash": false
+				},
+				"awsv4": {
+					"accessKey": "",
+					"secretKey": "",
+					"region": "",
+					"service": "",
+					"sessionToken": "",
+					"addAuthDataToQuery": false
+				},
+				"ntlm": {
+					"username": "",
+					"password": "",
+					"entity": "",
+					"workstation": "",
+					"disableRetryRequest": false
+				},
+				"edgegrid": {
+					"accessToken": "",
+					"clientToken": "",
+					"clientSecret": "",
+					"nonce": "",
+					"timestamp": "",
+					"baseURi": "",
+					"headersToSign": ""
+				},
+				"oauth1": {
+					"consumerKey": "",
+					"consumerSecret": "",
+					"signatureMethod": "",
+					"addEmptyParamsToSign": false,
+					"includeBodyHash": false,
+					"addParamsToHeader": false,
+					"disableHeaderEncoding": false,
+					"realm": "",
+					"version": "",
+					"nonce": "",
+					"timestamp": "",
+					"verifier": "",
+					"callback": "",
+					"tokenSecret": "",
+					"token": ""
+				},
+				"jwt": {
+					"addTokenTo": "",
+					"algorithm": "",
+					"secret": "",
+					"isSecretBase64Encoded": false,
+					"payload": "",
+					"headerPrefix": "",
+					"queryParamKey": "",
+					"header": ""
+				},
+				"asap": {
+					"alg": "",
+					"iss": "",
+					"aud": "",
+					"kid": "",
+					"privateKey": "",
+					"sub": "",
+					"claims": "",
+					"exp": ""
+				}
+			},
+			"pre_tasks": [],
+			"post_tasks": []
+		},
+		"codes": [],
+		"marks": [
+			{
+				"mark_id": "1",
+				"project_id": "0",
+				"name": "开发中",
+				"color": "#2857FF",
+				"is_sys_default": 1,
+				"is_default_mark": 1
+			},
+			{
+				"mark_id": "2",
+				"project_id": "0",
+				"name": "已完成",
+				"color": "#26CEA4",
+				"is_sys_default": 1,
+				"is_default_mark": -1
+			},
+			{
+				"mark_id": "3",
+				"project_id": "0",
+				"name": "需修改",
+				"color": "#FFC01E",
+				"is_sys_default": 1,
+				"is_default_mark": -1
+			},
+			{
+				"mark_id": "4",
+				"project_id": "0",
+				"name": "已废弃",
+				"color": "#FF2200",
+				"is_sys_default": 1,
+				"is_default_mark": -1
+			}
+		],
+		"attributes": [],
+		"mock_custom_rules": [],
+		"db_link": [],
+		"describe_library": [],
+		"custom_func": []
+	},
+	"models": [],
+	"apis": [
+		{
+			"target_id": "3860ac9e324002",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "户注册和登录",
+			"version": 8,
+			"sort": 1000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/user",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "{\r\n    \"Username\":\"francis\",\r\n    \"Password\":\"000000\"\r\n}",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "39c63eb2bb6042",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "登录时验证",
+			"version": 11,
+			"sort": 2000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/login",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "{\r\n    \"Username\":\"francis\",\r\n    \"Password\":\"000000\"\r\n}",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "39cc72a4fb6048",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "实现文章的创建功能",
+			"version": 24,
+			"sort": 3000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/addpost",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "{\r\n    \"Title\":\"Go语言入门指南\",\r\n    \"Content\":\"这是一篇关于Go语言基础的教程...\",\r\n    \"UserID\":1\r\n}",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "39cff6133b604c",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "文章的读取",
+			"version": 26,
+			"sort": 4000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/getpostlist",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "39d52af27b6052",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "单个文章的详细信息",
+			"version": 30,
+			"sort": 5000,
+			"method": "GET",
+			"url": "127.0.0.1:8081/getpostdetail",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "id",
+							"not_null": 1,
+							"value": "1",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "39e908d3bb605b",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "实现文章的更新功能",
+			"version": 41,
+			"sort": 6000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/updatePost",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "{\r\n    \"ID\":1,\r\n    \"Title\":\"Go语言入门指南999\",\r\n    \"Content\":\"这是一篇关于Go语言基础的教程999...\",\r\n    \"UserID\":1\r\n}",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "39ed3c31bb6067",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "实现文章的删除功能",
+			"version": 44,
+			"sort": 7000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/deletePost",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "{\r\n    \"ID\":1,\r\n    \"UserID\":1\r\n}",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "3a667ba1bb606e",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "实现评论的创建功能",
+			"version": 52,
+			"sort": 8000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/addComment",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "{\r\n  \"Content\": \"这是一条很好的文章，学到了很多！\",\r\n  \"UserID\": 1,\r\n  \"PostID\": 2\r\n}",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		},
+		{
+			"target_id": "3a6b44fe3b6073",
+			"project_id": "538604003852000",
+			"parent_id": "0",
+			"target_type": "api",
+			"name": "实现评论的读取功能",
+			"version": 56,
+			"sort": 9000,
+			"method": "POST",
+			"url": "127.0.0.1:8081/readCommentList",
+			"protocol": "http/1.1",
+			"mark_id": "1",
+			"description": "",
+			"request": {
+				"auth": {
+					"type": "inherit",
+					"kv": {
+						"key": "",
+						"value": "",
+						"in": "header"
+					},
+					"bearer": {
+						"key": ""
+					},
+					"basic": {
+						"username": "",
+						"password": ""
+					},
+					"digest": {
+						"username": "",
+						"password": "",
+						"realm": "",
+						"nonce": "",
+						"algorithm": "",
+						"qop": "",
+						"nc": "",
+						"cnonce": "",
+						"opaque": ""
+					},
+					"hawk": {
+						"authId": "",
+						"authKey": "",
+						"algorithm": "",
+						"user": "",
+						"nonce": "",
+						"extraData": "",
+						"default": "",
+						"delegation": "",
+						"timestamp": "",
+						"includePayloadHash": false
+					},
+					"awsv4": {
+						"accessKey": "",
+						"secretKey": "",
+						"region": "",
+						"service": "",
+						"sessionToken": "",
+						"addAuthDataToQuery": false
+					},
+					"ntlm": {
+						"username": "",
+						"password": "",
+						"entity": "",
+						"workstation": "",
+						"disableRetryRequest": false
+					},
+					"edgegrid": {
+						"accessToken": "",
+						"clientToken": "",
+						"clientSecret": "",
+						"nonce": "",
+						"timestamp": "",
+						"baseURi": "",
+						"headersToSign": ""
+					},
+					"oauth1": {
+						"consumerKey": "",
+						"consumerSecret": "",
+						"signatureMethod": "HMAC-SHA1",
+						"addEmptyParamsToSign": true,
+						"includeBodyHash": true,
+						"addParamsToHeader": false,
+						"disableHeaderEncoding": false,
+						"realm": "",
+						"version": "1.0",
+						"nonce": "",
+						"timestamp": "",
+						"verifier": "",
+						"callback": "",
+						"tokenSecret": "",
+						"token": ""
+					},
+					"jwt": {
+						"addTokenTo": "header",
+						"algorithm": "HS256",
+						"secret": "",
+						"isSecretBase64Encoded": false,
+						"payload": "",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": ""
+					},
+					"asap": {
+						"alg": "HS256",
+						"iss": "",
+						"aud": "",
+						"kid": "",
+						"privateKey": "",
+						"sub": "",
+						"claims": "",
+						"exp": ""
+					}
+				},
+				"body": {
+					"mode": "json",
+					"parameter": [
+						{
+							"param_id": "386995f6371023",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "11133",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "38699e2f371024",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "22244",
+							"content_type": "",
+							"file_name": "",
+							"file_base64": "",
+							"schema": {
+								"type": "string"
+							}
+						}
+					],
+					"raw": "{\r\n  \"ID\": 2\r\n}",
+					"raw_parameter": [],
+					"raw_schema": {
+						"type": "object"
+					},
+					"binary": null
+				},
+				"pre_tasks": [],
+				"post_tasks": [],
+				"header": {
+					"parameter": []
+				},
+				"query": {
+					"query_add_equal": 1,
+					"parameter": [
+						{
+							"param_id": "3869a262b71025",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "u",
+							"not_null": 1,
+							"value": "999",
+							"schema": {
+								"type": "string"
+							}
+						},
+						{
+							"param_id": "386f14bb39b035",
+							"description": "",
+							"field_type": "String",
+							"is_checked": -1,
+							"key": "p",
+							"not_null": 1,
+							"value": "888",
+							"schema": {
+								"type": "string"
+							}
+						}
+					]
+				},
+				"cookie": {
+					"cookie_encode": 1,
+					"parameter": []
+				},
+				"restful": {
+					"parameter": []
+				}
+			},
+			"response": {
+				"example": [
+					{
+						"example_id": "1",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "200",
+							"content_type": "json",
+							"is_default": 1,
+							"mock": "",
+							"name": "成功",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					},
+					{
+						"example_id": "2",
+						"raw": "",
+						"raw_parameter": [],
+						"headers": [],
+						"expect": {
+							"code": "404",
+							"content_type": "json",
+							"is_default": -1,
+							"mock": "",
+							"name": "失败",
+							"schema": {
+								"type": "object",
+								"properties": {}
+							},
+							"verify_type": "schema",
+							"sleep": 0
+						}
+					}
+				],
+				"is_check_result": 1
+			},
+			"ai_expect": {
+				"list": [],
+				"none_math_expect_id": "",
+				"none_math_example": null
+			},
+			"mock_server_enable": 1,
+			"mock_ip_white_list_enable": -1,
+			"mock_ip_white_list": "",
+			"mock_show_target_id": 0,
+			"attribute_info": {}
+		}
+	],
+	"samples": [],
+	"automated_testings": []
+}
