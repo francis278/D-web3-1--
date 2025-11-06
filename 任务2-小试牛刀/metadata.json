@@ -1,0 +1,15 @@
+{
+  "name": "jon-geng-BR8obs-EQkg-unsplash.jpg",
+  "description": "A lotus flower",
+  "image": "ipfs://bafybeib23gmglshokzmhrx3k6mt44pjxre7bo45t6pzyaoidfgzfzq5i2a",
+  "attributes": [
+    {
+      "trait_type": "Author",
+      "value": "jon-geng"
+    },
+    {
+      "trait_type": "License",
+      "value": "Unsplash"
+    }
+  ]
+}
